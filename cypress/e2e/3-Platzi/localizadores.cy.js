@@ -16,7 +16,7 @@ describe('Tipos de localizadores', () => {
 		cy.get('[placeholder="First Name"]')
 	})
 
-	it.only('Obtener por medio de un atributo y un tag', () => {
+	it('Obtener por medio de un atributo y un tag', () => {
 		// Obtendremos elementos que tengan un tag y un atributo
 		cy.get('input[placeholder="First Name"]')
 	})
@@ -30,8 +30,14 @@ describe('Tipos de localizadores', () => {
 		cy.get('.mr-sm-2.form-control')
 	})
 
-	it.only('Obtener por medio de un contains', () => {
+	it('Obtener por medio de un contains', () => {
 		//Contains se usa para buscar un elemento por su contanido, es decir como esta escrito en la pagina
 		cy.contains('Reading')
+		cy.contains('.header-wrapper', 'Widgets')
+	})
+
+	it('Usando Parent', () => {
+		//Obteniendo el elemento padre
+		cy.get('input[placeholder="First Name"]').parent
 	})
 })
