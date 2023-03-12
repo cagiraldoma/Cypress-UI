@@ -9,6 +9,8 @@ Permiten setear condiciones antes o despues de ejecutar un test case
 5. after = Se ejecuta una sola vez al final
 */
 
+// Skip - Only
+
 describe('Demo de Hooks', () => {
 	before(function () {
 		cy.log('Before')

@@ -11,6 +11,7 @@ module.exports = defineConfig({
 		projectId: 'gw5sat',
 		viewportWidth: 1200,
 		viewportHeight: 860,
+		chromeWebSecurity: false,
 		setupNodeEvents(on, config) {
 			// implement node event listeners here
 		},

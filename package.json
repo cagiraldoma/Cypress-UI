@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open",
+    "test": "test",
+    "cypress:open":"cypress open",
     "run:server": "json-server --watch db.json"
   },
   "keywords": [],
